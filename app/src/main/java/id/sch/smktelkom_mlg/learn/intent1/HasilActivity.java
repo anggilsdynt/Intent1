@@ -4,7 +4,6 @@ package id.sch.smktelkom_mlg.learn.intent1;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
 import java.util.Calendar;
@@ -26,12 +25,6 @@ public class HasilActivity extends AppCompatActivity {
         TextView tvHasil = (TextView) findViewById(R.id.textViewHasil);
         tvHasil.setText(nama + " lahir pada tahun " + tahunLahir);
 
-        findViewById(R.id.buttonBack).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
